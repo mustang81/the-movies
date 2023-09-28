@@ -1,0 +1,67 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+
+}
+body{
+  background-color: #ededed;
+  font-family: 'Asap',sans-serif;
+  color:black;
+  font-size: 16px;
+  line-height: 1.8;
+}
+header,footer{
+  background-color: black;
+  height: 100px;
+}
+.sidebar-right{
+  background-color: blue;
+}
+h1,h2{
+  color:red;
+}
+/* -----------start the header style----------------- */
+.site-header{
+  height: 400px;
+  display: flex;
+  flex-flow: column;
+}
+.site-info{
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+.site-title{
+  font-size: 2rem;
+  text-align: center;
+  color:white;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.site-description{
+  font-size: 1.2rem;
+  text-align: center;
+  color:#f6d200;
+  font-style: italic;
+  margin-top:-.8rem;
+}
+.main-menu{
+  padding:1rem;
+  color:black;
+  background-color: #f6d200;
+}
+/* -----------End the header style------------------- */
+@media screen and (min-width:1120px) {
+  .site-title{
+    font-size: 4rem;
+  }
+  .content-area{
+    display: flex;
+  }
+  .sidebar-right{
+    flex:0 0 320px;
+  }
+  
+}
